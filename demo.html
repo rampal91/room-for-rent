@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>CM Law Chambers</title>
+
+	<!-- favicon-->
+	<link rel="icon" href="images/fav.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<!-- slick css --->
+	<link rel="stylesheet" href="css/slick-theme.min.css"/>
+	<link rel="stylesheet" href="css/slick.min.css"/>
+	
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/47.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<!-- Animate CSS-->
+	<link rel="stylesheet" href="css/animate.css">
+
+	<!--Google font-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+	
+	<!-- custome css -->
+	<link rel="stylesheet" href="my-custom.css" />
+
+ <body class="main-body">
+
+
+<!----
+============================
+BODY PART
+============================
+-->
+
+  <div id="my-signin2"></div>
+  <script>
+    function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+  </script>
+
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+<!----
+============================
+		FOOTER
+============================
+-->
+
+<!----
+============================
+JAVA SCRIPT FILES FROME HERE
+============================
+-->
+
+<!-- JQuery min.js ---->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- JQuery proper .js ----------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- then Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+
+<!---- slick .js file --------------->
+<script src="js/slick.min.js"></script>
+
+<!---- slick .js file --------------->
+<script src="js/wow.min.js"></script>
+
+<!--- custorm .js file --------->
+<script src="js/my-custom.js"></script>
+
+  </body>
+</html>

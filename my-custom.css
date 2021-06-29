@@ -1,0 +1,374 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main-body{
+    margin: 0px;
+    padding: 0px;
+    background-color:#333333;
+}
+
+/* ===================
+TOP-HEADER
+======================*/
+.top-header{
+    background-image: linear-gradient(rgb(238, 184, 98),#FF9800);
+}
+
+.top-header span, a{
+    color:#333333;
+    font-family: 'Poppins', sans-serif;
+    font-size:13px;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+}
+
+@media screen and (max-width: 768px){
+    
+}
+/* ===================
+        NAVBAR
+======================*/
+/*@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}		*/
+
+.navigation{
+    border-bottom:2px solid #FF9800;
+    background:white;
+}
+.navigation .navbar-toggler{
+    background-color: #FF9800;
+    color: wheat;
+    
+}
+navigation .navbar-toggler .fa-arrow-down{
+    transform: rotate(180deg);
+    transition: 5s;
+}
+#main_nav ul li a{
+    color:#FF9800;
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    font-weight:bolder;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    display:block;
+    margin:20px 0px 20px 0px;
+}
+
+@media screen and (min-width: 800px) {
+    #main_nav ul li:hover{
+        background:#FF9800;
+        transition: 1s;
+    }
+#main_nav ul li:hover a{
+        color:white;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #main_nav{
+        background-image: linear-gradient(rgb(238, 184, 98),#FF9800);
+        width: 100%;
+        margin: 0;
+    }
+
+    #main_nav ul li a{
+        color: white;
+        margin:10px 0px 10px 0px;
+        text-align: center;
+    }
+}
+
+/* ===================
+  PUBLISH MODEL
+======================*/
+#publishModel .modal-content{
+    background-color: #FF9800;
+}
+#publishModel .google-btn span{
+    color: #333333;
+}
+/* ===================
+  FILTER AREA
+======================*/
+#filter .col-md-8, filter .col-md-4{
+    padding:100px;
+}
+#filter .container{
+    border: 1px solid #FF9800;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#filter input,#filter select{
+    background-color: #FF9800;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    font-weight:bolder;
+    letter-spacing:2px;
+
+}
+
+/* ===================
+    ROOMS AREA
+======================*/
+rooms-area{
+    background-image: url('images/ald-uni.jpeg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+rooms-area .container{
+    border: 1px solid #FF9800;
+    overflow: hidden;
+}
+
+#rooms-area .rooms-row .tm-box{
+    overflow: hidden;
+    border: 1px solid #FF9800;
+}
+
+#rooms-area .rooms-row .tm-box .img-box{
+    height: 200px;
+    border-bottom:1px solid #FF9800;
+    overflow: hidden;
+}
+
+#rooms-area .rooms-row .tm-box .img-box img{
+    width: 100%;
+}
+
+#rooms-area .rooms-row .tm-box .name-box{
+    background-color: #FF9800;
+    width: 100%;
+    padding: 10px;
+}
+
+#rooms-area .rooms-row .tm-box .name-box h4{
+    color:#333333;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing:2px;
+    font-family: 'Poppins', sans-serif;
+}
+#rooms-area .name-box .col-6, #rooms-area .name-box .col-12{
+    border:none;
+}
+#rooms-area .name-box div{
+    border:1px solid #333333;
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    text-align: center;
+}
+#exampleModalCenter .modal-content{
+    background-color: #FF9800;
+}
+#exampleModalCenter .modal-header .col-4{
+    padding:2px;
+}
+#exampleModalCenter .modal-header .col-4 div{
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+}
+#exampleModalCenter h6{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+/*================================
+    LOGIN FORM
+================================*/
+login-form{
+    background-image: url('images/ald-uni.jpeg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#login-form .container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#login-form .p, .or{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    letter-spacing:2px;
+    text-transform: uppercase;
+}
+#login-form .login-bg{
+    background-image: linear-gradient(rgb(238, 184, 98),#FF9800);
+    max-width:700px;
+    border-radius:5px;
+}
+#google-btn button{
+    background-color:transparent;
+    border:1px solid white;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    letter-spacing:2px;
+    text-transform: uppercase;
+}
+/* ===================
+ ABOUT SECTION
+======================*/
+about .container{
+    border: 1px solid #FF9800;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#about h2{
+    color:black;
+    text-transform:uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+    letter-spacing:2px;
+    font-size: 15px;
+}
+
+#about p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    letter-spacing:2px;
+}
+
+
+/* ===================
+    FOOTER
+======================*/
+/* Flaired edges, by Tomas Theunissen */
+
+hr.style-seven {
+    overflow: visible; /* For IE */
+    border:0.5px solid white;
+    margin-top: 0px;
+}
+.footer{
+    /*background-color:#debc8e;//rgb(238, 184, 98) ,#b78354; background-color: #FF9800;*/
+    background-image: linear-gradient(rgb(238, 184, 98),#FF9800);
+}
+
+.footer .container{
+    padding-top:25px;
+}
+.footer .container .row ul{
+    list-style-type:none;
+}
+
+.footer .container .row h2{
+    color:black;
+    text-transform:uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+    letter-spacing:2px;
+}
+
+.footer .container .row .disclaimer p{
+    color:rgb(0, 0, 0);
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+.footer .container .row .imp-link ul li a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size:11px;
+    letter-spacing:2px;
+    
+}
+
+.footer .container .row .address p{
+    color:rgb(0, 0, 0);
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size:13px;
+    letter-spacing:2px;
+    font-weight: bold;
+}
+
+.footer .container .row .address p span{
+    color:rgb(0, 0, 0);
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size:13px;
+    letter-spacing:2px;
+    font-weight: bold;
+}
+/*------/ Prelaoder /------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #f2f2f2;
+    border-top: 6px solid #FF9800;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  }
+  
+  @-webkit-keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+/* copyright area */
+
+.footer .container .row h6{
+    color:rgb(0, 0, 0);
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size:13px;
+    letter-spacing:2px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 500px) {
+    #contact-button button i, #whatsapp-button button i{
+        display: none;
+    }
+  }
